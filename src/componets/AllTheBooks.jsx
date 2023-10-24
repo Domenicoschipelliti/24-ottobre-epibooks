@@ -1,29 +1,43 @@
 
-import Libri from "../json"
-import {Container,Row,Col,Card} from 'react-bootstrap'
+import Libri from "../json/fantasy.json"
+
+
+import {Container,Row,Col,Card,Button} from 'react-bootstrap'
 
 
 const AllTheBooks=()=>{
     
     return(
-        <div>
-    <Container>
-       <Row>
-        <Col  md={6}xl={4} >
+        
+    <Container >
+    <Row>
+    
+     {Libri.map((books)=>{
+          return(
+         
+        <Col sm={12} md={6}  xl={2} key={books.asin}>
+       
         <Card>
-         <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-             <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-             </Card.Text>
-            </Card.Body>
+          <Card.Img   variant="top" src={books.img} />
+             <Card.Body>
+               <Card.Title>{books.title}</Card.Title>
+                <Card.Text>{books.category}</Card.Text>
+                 <Card.Text>{books.price} Euro</Card.Text>
+                 <Button variant="success">Ordina</Button>
+           
+             </Card.Body>
         </Card>
-        </Col>
-      </Row>
-    </Container>
-        </div>
+       </Col>
+      
+      
+          )
+       })}
+     
+      
+     
+   </Row>
+ </Container>
+        
     )
 }
 

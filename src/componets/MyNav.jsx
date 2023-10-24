@@ -5,7 +5,7 @@ import {Container  ,Navbar,Nav } from "react-bootstrap"
 
 const Barriera=()=>{
     return(
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary mb-3">
       <Container className="ms-0">
         <Navbar.Brand href="#">EpiBooks</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
