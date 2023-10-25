@@ -4,7 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNav from './componets/MyNav';
 import MyFooter from './componets/MyFooter';
 import AllTheBooks from './componets/AllTheBooks';
+
 import Welcome from './componets/Welcome';
+import BookList from './componets/BookList';
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       <MyNav></MyNav>
       <Welcome></Welcome>
       <AllTheBooks></AllTheBooks>
-
+      <BookList></BookList>
+      
+      
       <MyFooter></MyFooter>
     </div>
   );
