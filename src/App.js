@@ -7,6 +7,7 @@ import AllTheBooks from './componets/AllTheBooks';
 
 import Welcome from './componets/Welcome';
 import BookList from './componets/BookList';
+import ClassSingleBook from './componets/ClassSingleBook';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Welcome></Welcome>
       <AllTheBooks></AllTheBooks>
       <BookList></BookList>
+      <ClassSingleBook></ClassSingleBook>
       
       
       <MyFooter></MyFooter>
